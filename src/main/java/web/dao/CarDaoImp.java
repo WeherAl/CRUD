@@ -6,9 +6,10 @@ import web.models.Car;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 @Component
-public class CarDaoImp {
-    List<Car> cars;
+public class CarDaoImp implements CarDao {
+    private List<Car> cars;
 
     {
         cars = new ArrayList<>();
@@ -19,12 +20,8 @@ public class CarDaoImp {
         cars.add(new Car("Volkswagen", "Passat", 2020));
     }
 
-    public List<Car> index() {
+    public List<Car> getCars() {
         return cars;
-    }
-
-    public void setCars(List<Car> cars) {
-        this.cars = cars;
     }
 
     public List<Car> getSomeCars(int count) {

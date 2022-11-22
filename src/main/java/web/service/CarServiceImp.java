@@ -12,11 +12,11 @@ public class CarServiceImp implements CarService {
     CarDaoImp carDaoImp = new CarDaoImp();
 
     @Override
-    public List<Car> getCars(int count) {
+    public List<Car> getSomeCars(int count) {
         return carDaoImp.getSomeCars(count);
     }
 
-    public List<Car> index() {
-        return carDaoImp.index();
+    public List<Car> getCars() {
+        return carDaoImp.getCars();
     }
 }
