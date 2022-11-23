@@ -22,7 +22,6 @@ public class CarController {
         this.carServiceImp = carServiceImp;
     }
 
-
     @GetMapping("/cars")
     public String getSomeCars(@RequestParam("count") String count, ModelMap model) {
         ;

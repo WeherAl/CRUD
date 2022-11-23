@@ -1,13 +1,13 @@
 package web.models;
 
-import org.springframework.stereotype.Component;
-
 import java.util.Objects;
 
 public class Car {
 
+    private long id;
     private String mark;
     private String model;
+
     private int year;
 
     public Car() {
